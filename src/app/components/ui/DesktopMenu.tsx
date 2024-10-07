@@ -1,19 +1,13 @@
 "use client";
-
 import MenuItem from "./MenuItem";
 
-interface DesktopMenuProps {
-  isMobile: boolean;
-}
-
-const DesktopMenu: React.FC<DesktopMenuProps> = ({ isMobile }) => {
-  if (isMobile) return null;
-
+const DesktopMenu = () => {
   return (
-    <div className="absolute bottom-4 right-4 flex flex-col items-end text-white">
-      <MenuItem href="/">PRODUCTS</MenuItem>
+    <div className="flex flex-col text-white text-3xl p-2 z-10 hidden-on-mobile">
+      <MenuItem href="/">HOME</MenuItem>
+      <MenuItem href="/products">PRODUCTS</MenuItem>
       <MenuItem href="/about">ABOUT</MenuItem>
-      <MenuItem href="/shop">SIGN UP</MenuItem>
+      <MenuItem href="/signup">SIGN UP</MenuItem>
     </div>
   );
 };

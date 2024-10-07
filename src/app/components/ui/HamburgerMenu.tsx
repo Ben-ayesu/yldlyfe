@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
@@ -8,7 +8,7 @@ const HamburgerMenu = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -37,7 +37,7 @@ const HamburgerMenu = () => {
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
       />
-      <DesktopMenu isMobile={isMobile} />
+      <DesktopMenu />
     </div>
   );
 };

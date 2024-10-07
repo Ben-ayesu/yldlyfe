@@ -42,6 +42,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
             <MenuItem href="/products" onClick={() => setIsMenuOpen(false)}>
               PRODUCTS
             </MenuItem>
+            <MenuItem href="/about" onClick={() => setIsMenuOpen(false)}>
+              ABOUT
+            </MenuItem>
             <MenuItem href="/signup" onClick={() => setIsMenuOpen(false)}>
               SIGN UP
             </MenuItem>

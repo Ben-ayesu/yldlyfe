@@ -16,3 +16,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.hidden-on-mobile {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

@@ -14,7 +14,7 @@ export default function Signup() {
             htmlFor="email"
             className="block text-white text-sm font-bold mb-2"
           >
-            Email:
+            EMAIL:
           </label>
           <input
             type="email"

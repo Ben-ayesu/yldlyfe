@@ -9,7 +9,7 @@ interface MenuItemProps {
 const MenuItem: React.FC<MenuItemProps> = ({ href, onClick, children }) => (
   <Link
     href={href}
-    className="block mb-4 text-white text-2xl"
+    className="block text-white text-lg md:text-xl lg:text-2xl hover:text-gray-300 transition-colors duration-200"
     onClick={onClick}
   >
     {children}

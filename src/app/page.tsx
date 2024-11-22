@@ -24,8 +24,14 @@ export default function Home() {
     }
 
     return (
-        <div className="relative min-h-[200vh] overflow-hidden">
-            <VideoBackground />
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{duration: 0.5}}
+            className="relative min-h-[200vh] overflow-hidden"
+        >
+            <VideoBackground/>
 
             <motion.div
                 style={{ opacity, scale }}
@@ -63,7 +69,7 @@ export default function Home() {
                 <ParallaxText baseVelocity={-5}>YLDLYFE SZN 1</ParallaxText>
                 <ParallaxText baseVelocity={5}>COMING SOON</ParallaxText>
             </motion.div>
-        </div>
+        </motion.div>
     );
 }
 

@@ -35,7 +35,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, title }) => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
-                    className="text-5xl md:text-7xl font-black mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500"
+                    className="text-5xl md:text-7xl font-black mb-8 mt-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500"
                 >
                     {title}
                 </motion.h1>

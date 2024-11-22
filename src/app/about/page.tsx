@@ -14,7 +14,7 @@ export default function About() {
             >
                 <h2 className="text-3xl font-bold mb-6">Yldlyfe SZN 1</h2>
                 <p className="text-xl mb-8">
-                    Experience the extraordinary with Yldlyfe. We're not just a brand; we're a lifestyle.
+                    Experience the extraordinary with Yldlyfe. We&#39;re not just a brand; we&#39;re a lifestyle.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <motion.div
